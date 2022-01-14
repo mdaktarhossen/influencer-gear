@@ -73,4 +73,41 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.24);
 }
 
+/* ------POPULAR COLLECTION SECTION START----- */
+.Popular-collection {
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
 
+.Popular-collection p {
+  font-size: 14px;
+}
+
+.collections{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+  padding: 10px;
+  background-color: green;
+  margin: 10px 20px;
+}
+.product img {
+  width: 100%;
+  border-radius: 5px;
+  background-color: purple;
+
+}
+
+.fill {
+  margin-top: 10px;
+  color: #fb8200;
+  font-size: 0.8rem;
+}
+
+.empty {
+  color: #fb8200;
+  font-size: 0.8rem;
+}
