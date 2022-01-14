@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ------NABVAR DESIGN START------ */
+.continear {
+  width: 80%;
+  margin: auto;
+}
+
+.nabvar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nabvar h1 {
+  font-size: 24px;
+}
+
+.nabvar-button {
+  display: flex;
+}
+
+.nabvar-button li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.nabvar-button li a {
+  text-decoration: none;
+  color: black;
+}
+/* ------NABVAR DESIGN END------ */
+
+/* -----CAMERA SECTION START----- */
+.camera-section {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.camera-section h1 {
+  font-size: 52px;
+  line-height: 70px;
+}
+
+.camera-section p {
+  font-size: 16px;
+  line-height: 24px;
+}
+/* button */
+.btn {
+  color: #ffffff;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  padding: 10px 24px 10px 24px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  margin-top: 16px;
+}
+/* -----CAMERA SECTION END----- */
+
+/* ----------COMPANY LOGOS START---- */
+.company-logos {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.315);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.24);
+}
+
+
