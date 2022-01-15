@@ -200,3 +200,59 @@
   transform: scale(1.1);
   background: none;
 }
+
+/* -------------USE OF MEDIA QUERY-------------- */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .company-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 30px 0px;
+  }
+
+  .company-logos div {
+    margin: 10px 30px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .Popular-collection {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .camera-section {
+    display: block;
+  }
+
+  .company-logos {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .company-logos div {
+    padding: 10px 0px;
+    margin: auto;
+  }
+
+  .Popular-collection {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
