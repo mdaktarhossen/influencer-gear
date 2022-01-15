@@ -54,6 +54,11 @@
 .camera-section img {
   border: 1px solid rgba(128, 128, 128, 0.418);
   border-radius: 50%;
+  transition: 0.5s;
+}
+
+.camera-section img:hover {
+  transform: scale(1.02);
 }
 /* button */
 .btn {
@@ -166,7 +171,6 @@
 }
 
 .faq:hover {
-  transform: scale(1.01);
   font-style: italic;
 }
 /* ---------FAQ SECTION END-------- */
