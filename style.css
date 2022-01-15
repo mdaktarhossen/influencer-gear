@@ -60,6 +60,12 @@
   outline: none;
   border: none;
   margin-top: 16px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: -4px -3px 5px rgba(128, 128, 128, 0.384);
+  transform: scale(1.05);
 }
 /* -----CAMERA SECTION END----- */
 
@@ -127,6 +133,35 @@
   color: #e02c6dde;
 }
 
+/* ---------FAQ SECTION-------- */
+.faqs {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  background-color: rgba(245, 245, 245, 0.986);
+  padding: 10px;
+}
+
+.faqs > h1 {
+  text-align: center;
+}
+
+.faq .faq-btn {
+  float: right;
+}
+.faq {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightgray;
+  transition: 0.5s;
+}
+
+.faq:hover {
+  transform: scale(1.01);
+}
+
 /* ---footer design---- */
 .footer {
   height: 239px;
@@ -161,7 +196,7 @@
 }
 
 .footer-social-link li a .footer-link:hover {
-  background-color: rgba(128, 128, 128, 0.014);
-  transform: rotate(45deg);
-  box-shadow: 0px 0px 2px whitesmoke;
+  transform: rotate(60deg);
+  transform: scale(1.1);
+  background: none;
 }
