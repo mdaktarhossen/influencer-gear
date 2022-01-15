@@ -6,7 +6,7 @@
 }
 /* ------NABVAR DESIGN START------ */
 .continear {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -65,40 +65,46 @@
 
 /* ----------COMPANY LOGOS START---- */
 .company-logos {
-  padding: 10px;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: 100px;
   border-top: 1px solid rgba(128, 128, 128, 0.315);
   border-bottom: 1px solid rgba(128, 128, 128, 0.24);
 }
 
 /* ------POPULAR COLLECTION SECTION START----- */
 .Popular-collection {
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 100px;
+}
+
+.Popular-collection > h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .Popular-collection p {
   font-size: 14px;
 }
 
-.collections{
+.collections {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  background-color: whitesmoke;
 }
 
 .product {
   padding: 10px;
-  background-color: green;
+  background-color: white;
   margin: 10px 20px;
 }
 .product img {
-  width: 100%;
   border-radius: 5px;
   background-color: purple;
-
 }
 
 .fill {
@@ -110,4 +116,52 @@
 .empty {
   color: #fb8200;
   font-size: 0.8rem;
+}
+
+.Popular-collection #see-more {
+  text-align: right;
+}
+
+.Popular-collection #see-more a {
+  text-decoration: none;
+  color: #e02c6dde;
+}
+
+/* ---footer design---- */
+.footer {
+  height: 239px;
+  background-color: #0a0826;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.copyright-warning p {
+  text-align: center;
+}
+
+.footer-social-link ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.footer-social-link li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-social-link li a .fab {
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.158);
+  font-size: 1.5rem;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.945);
+  transition: 0.5s;
+}
+
+.footer-social-link li a .footer-link:hover {
+  background-color: rgba(128, 128, 128, 0.014);
+  transform: rotate(45deg);
+  box-shadow: 0px 0px 2px whitesmoke;
 }
