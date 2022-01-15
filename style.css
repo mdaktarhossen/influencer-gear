@@ -50,6 +50,11 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+.camera-section img {
+  border: 1px solid rgba(128, 128, 128, 0.418);
+  border-radius: 50%;
+}
 /* button */
 .btn {
   color: #ffffff;
@@ -110,7 +115,7 @@
 }
 .product img {
   border-radius: 5px;
-  background-color: purple;
+  box-shadow: -5px 5px 5px gray;
 }
 
 .fill {
@@ -132,13 +137,15 @@
   text-decoration: none;
   color: #e02c6dde;
 }
+/* ------POPULAR COLLECTION SECTION END----- */
 
-/* ---------FAQ SECTION-------- */
+/* ---------FAQ SECTION START-------- */
 .faqs {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 50px;
+  border-radius: 5px;
   background-color: rgba(245, 245, 245, 0.986);
   padding: 10px;
 }
@@ -160,9 +167,11 @@
 
 .faq:hover {
   transform: scale(1.01);
+  font-style: italic;
 }
+/* ---------FAQ SECTION END-------- */
 
-/* ---footer design---- */
+/* --------FOOTER DESIGN START-------- */
 .footer {
   height: 239px;
   background-color: #0a0826;
@@ -172,7 +181,7 @@
   color: white;
 }
 
-.copyright-warning p {
+.copyright-warning {
   text-align: center;
 }
 
@@ -200,21 +209,28 @@
   transform: scale(1.1);
   background: none;
 }
+/* --------FOOTER DESIGN END-------- */
 
-/* -------------USE OF MEDIA QUERY-------------- */
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+/* -----------MEDIA QUERY ADD------- */
+@media only screen and (min-width: 640px) and (max-width: 786px) {
+  .camera-section img {
+    width: 100%;
+  }
   .company-logos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     margin: 30px 0px;
+  }
+
+  .product img {
+    width: 100%;
   }
 
   .company-logos div {
     margin: 10px 30px;
     margin: auto;
-    width: 100%;
   }
 
   .Popular-collection {
@@ -229,7 +245,7 @@
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 640px) {
   .camera-section {
     display: block;
   }
@@ -237,12 +253,11 @@
   .company-logos {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
-  .company-logos div {
-    padding: 10px 0px;
-    margin: auto;
+  .company-logos img {
+    padding: 10px;
   }
 
   .Popular-collection {
